@@ -5,6 +5,8 @@ function setup()
   rectMode(CENTER)
   angleMode(DEGREES)
 
+  colorNum = random(255)
+
   -- Set the program title
   windowTitle("funky function")
 
@@ -22,11 +24,11 @@ function draw()
     ang = i * (360 / 8)
     
     xCoord = cos(ang)
-    yCoord = sine(ang)
+    yCoord = sin(ang)
 
     if i % 2 == 0 then
 
-      fill(random(), random(), random())
+      fill(colorNum, colorNum, colorNum)
       circle(xCoord, yCoord, 20)
 
     else
