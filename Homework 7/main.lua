@@ -23,8 +23,8 @@ function draw()
 
     ang = i * (360 / 8)
     
-    xCoord = cos(ang)
-    yCoord = sin(ang)
+    xCoord = r * cos(ang)
+    yCoord = r * sin(ang)
 
     if i % 2 == 0 then
 
