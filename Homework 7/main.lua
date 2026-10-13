@@ -3,6 +3,7 @@ require("L5")
 function setup()
   size(400, 400)
   rectMode(CENTER)
+  angleMode(DEGREES)
 
   -- Set the program title
   windowTitle("funky function")
@@ -12,11 +13,26 @@ end
 
 function draw()
 
-  x = width
-  y = height
+  x = width / 2
+  y = height / 2
+  r = 100
 
   for i = 1, 8, 1 do
+
+    ang = i * (360 / 8)
+    
+    xCoord = cos(ang)
+    yCoord = sine(ang)
+
     if i % 2 == 0 then
+
+      fill(random(), random(), random())
+      circle(xCoord, yCoord, 20)
+
+    else
+
+      fill(0, 120, 180)
+      circle(xCoord, yCoord, 20)
       
     end
   end
