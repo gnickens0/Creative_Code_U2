@@ -19,7 +19,8 @@ end
 function drawLady(lineColor1, lineColor2, lineColor3)
 
   stroke(lineColor1, lineColor2, lineColor3)
-
+  strokeWeight(6)
+  noFill()
 
 end
 
@@ -41,7 +42,8 @@ function draw()
     background(41, 41, 41)
     drawLady(153, 54, 0)
 
-
   end
+
+  text(mouseX .. "," .. mouseY, width / 2, height / 2)
 
 end
