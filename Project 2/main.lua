@@ -8,20 +8,40 @@ function setup()
 
   describe('its project 2')
 
-  background(41, 41, 41)
-
   colorGroupR = {}
   colorGroupG = {}
   colorGroupB = {}
 
-  risoGroupR = {}
-  risoGroupG = {}
-  risoGroupB = {}
+  riso = false
 
-  risoMode = false
+end
+
+function drawLady(lineColor1, lineColor2, lineColor3)
+
+  stroke(lineColor1, lineColor2, lineColor3)
+
+
+end
+
+function risoMode()
+
+  background(0, 0, 0)
 
 end
 
 function draw()
-  
+
+  if riso == true then
+
+    risoMode()
+    drawLady(0, 0, 0)
+
+  else
+
+    background(41, 41, 41)
+    drawLady(153, 54, 0)
+
+
+  end
+
 end
