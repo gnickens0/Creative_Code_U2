@@ -21,6 +21,7 @@ function drawLady(lineColor1, lineColor2, lineColor3)
   stroke(lineColor1, lineColor2, lineColor3)
   strokeWeight(6)
   noFill()
+  bezier(248, 109, 323, 157, 225, 97, 301, 182)
 
 end
 
