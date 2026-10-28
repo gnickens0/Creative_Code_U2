@@ -8,9 +8,10 @@ function setup()
 
   describe('its project 2')
 
-  colorGroupR = {}
-  colorGroupG = {}
-  colorGroupB = {}
+  colorGroupR = {255, 199, 176, 230}
+  colorGroupG = {57, 97, 146, 119}
+  colorGroupB = {51, 115, 15, 0}
+  colorGroupA = {0, 255}
 
   riso = false
 
